@@ -17,4 +17,17 @@ class CalculatorTest {
         //then
         assertEquals(expectedSum, actualSum);
     }
+
+    @Test
+    void multiplyOf2And4ShouldReturn8() {
+        //given
+        int a = 2;
+        int b = 4;
+        int expectedMultiply = 8;
+        //when
+        int actualMultiply = new Calculator(a, b).multiply();
+
+        //then
+        assertEquals(expectedMultiply, actualMultiply);
+    }
 }
